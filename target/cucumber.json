@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Search bar",
+        "description": "",
+        "id": "as-a-user-i-verify-i-am-able-to-search-for-an-item-in-amazon-website;search-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10836460016,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to amazon uk website",
+            "match": {
+              "location": "SearchStepdefs.iNavigateToAmazonUkWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 925131552,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I choose \"Books\" from dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 10
+                }
+              ],
+              "location": "SearchStepdefs.iChooseFromDropdownMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469301133,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the book name \"Diary of a wimpy kid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Diary of a wimpy kid",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchStepdefs.iEnterTheBookName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13868795,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:96)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:72)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:46)\r\n\tat Pages.SearchResultPage.checkSearchResult(SearchResultPage.java:18)\r\n\tat StepDefs.SearchStepdefs.theBooksInThatSeriesIsDisplayed(SearchStepdefs.java:69)\r\n\tat ✽.Then The books in that series is displayed(src/test/java/Features/Search.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "The books in that series is displayed",
+            "match": {
+              "location": "SearchStepdefs.theBooksInThatSeriesIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user i verify I am able to search for an item in amazon website",
+    "description": "",
+    "id": "as-a-user-i-verify-i-am-able-to-search-for-an-item-in-amazon-website",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/Search.feature"
+  }
+]
